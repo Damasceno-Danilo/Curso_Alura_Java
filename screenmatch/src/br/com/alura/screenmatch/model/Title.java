@@ -25,6 +25,10 @@ public class Title {
         this.includedPlan = includedPlan;
     }
 
+    public int getDurationInMinutes() {
+        return durationInMinutes;
+    }
+
     public void setDurationInMinutes(int durationInMinutes) {
         this.durationInMinutes = durationInMinutes;
     }
@@ -33,7 +37,7 @@ public class Title {
         System.out.println("Ficha Tecnica: ");
         System.out.println("Nome do Filme: " + name);
         System.out.println("Ano de lancamento: " + releaseYear);
-        System.out.println("Duração: " + durationInMinutes);
+        System.out.println("Duração: " + durationInMinutes + " minutos");
 
     }
 
@@ -45,4 +49,6 @@ public class Title {
     public double mediaReviews() {
         return addAssessment / totalAssessment;
     }
+
+
 }

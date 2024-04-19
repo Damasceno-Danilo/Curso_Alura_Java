@@ -11,4 +11,9 @@ public class Film extends Title {
     public void setDirector(String director) {
         this.director = director;
     }
+
+    @Override
+    public int getDurationInMinutes() {
+        return super.getDurationInMinutes();
+    }
 }

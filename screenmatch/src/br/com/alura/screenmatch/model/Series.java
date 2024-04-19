@@ -30,4 +30,9 @@ public class Series extends Title {
   public void setMinutesForSeason(int minutesForSeason) {
     this.minutesForSeason = minutesForSeason;
   }
+
+  @Override
+  public int getDurationInMinutes() {
+    return seasons * episodes * minutesForSeason;
+  }
 }
